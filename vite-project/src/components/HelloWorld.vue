@@ -32,6 +32,10 @@
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+
+  <p>
+    <b>Hooray!</b>
+  </p>
 </template>
 
 <script lang="ts">
