@@ -26,6 +26,7 @@ jobs:
         run: |
           npm install
           npm run build
+        working-directory: ./vite-project
       - name: Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
