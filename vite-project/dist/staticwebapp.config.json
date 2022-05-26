@@ -1,5 +1,23 @@
 {
   "platform": {
     "apiRuntime": "node:16"
-  }
+  },
+  "routes": [
+    {
+      "route": "/login",
+      "rewrite": "/.auth/login/github"
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    },
+    {
+      "route": "/api/healthcheck",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "*",
+      "allowedRoles": ["authenticated"]
+    }
+  ]
 }
