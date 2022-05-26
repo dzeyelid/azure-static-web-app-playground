@@ -24,7 +24,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: app-dist
-          path: dist
+          path: vite-project/dist
 
   deploy:
     name: Deploy
